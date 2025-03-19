@@ -32,6 +32,6 @@ Once the playbook has run, you can access the web server at the public IP addres
 
 ## Screenshot of the Frontend Server
 
-![frontend website](website.jpg)
+![frontend website](website.png)
 
 
