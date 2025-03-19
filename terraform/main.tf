@@ -127,7 +127,7 @@ module "redis" {
   ec2_name               = "rocky"
   ec2_role               = "redis-server"
   ami                    = "ami-093bd987f8e53e1f2"
-  key_name               = "aws-4640"                  # SSH key name
+  key_name               = "bcitkey"                  # SSH key name
   vpc_security_group_ids = [aws_security_group.web.id] # Pass security group IDs here
   subnet_id              = aws_subnet.web.id           # Pass the subnet ID here
 }
@@ -139,7 +139,7 @@ module "frontend" {
   ec2_name               = "ubuntu"
   ec2_role               = "frontend-server"
   ami                    = data.aws_ami.ubuntu.id      # data source AMI
-  key_name               = "aws-4640"                  # SSH key name
+  key_name               = "bcitkey"                  # SSH key name
   vpc_security_group_ids = [aws_security_group.web.id] # Pass security group IDs here
   subnet_id              = aws_subnet.web.id           # Pass the subnet ID here
 }
