@@ -29,3 +29,9 @@ ansible-playbook -i inventory/aws_ec2.yml playbook.yml
 ## Accessing the Web Server
 
 Once the playbook has run, you can access the web server at the public IP address of the Ubuntu frontend server.
+
+## Screenshot of the Frontend Server
+
+![frontend website](website.jpg)
+
+
